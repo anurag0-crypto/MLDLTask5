@@ -1,10 +1,10 @@
 # CIFAR-10: ANN vs CNN Comparative Analysis
 
-A hands-on comparison of a fully-connected neural network (ANN) and a convolutional neural network (CNN) on the CIFAR-10 image dataset, built with TensorFlow/Keras.
+A hands on comparison of a fully-connected neural network (ANN) and a convolutional neural network (CNN) on the CIFAR-10 image dataset, built with TensorFlow/Keras.
 
 ## Description
 
-CIFAR-10 has 60,000 small color photos (32x32 pixels) split across 10 categories — airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck. This project trains two different neural networks on the same data, under the same conditions (15 epochs, same batch size, same train/validation/test split), and compares how well each one learns to classify the images.
+CIFAR-10 has 60,000 small color photos (32x32 pixels) split across 10 categories : airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck. This project trains two different neural networks on the same data, under the same conditions (15 epochs, same batch size, same train/validation/test split), and compares how well each one learns to classify the images.
 
 ## Results
 
@@ -17,12 +17,11 @@ The CNN ends up **29 percentage points more accurate**, despite having **5.4x fe
 
 ## Why the CNN wins
 
-The ANN has to flatten each image into a flat list of numbers before it can look at it, which throws away all information about which pixels are next to which. The CNN looks at the image as an actual 2D grid, using small filters that slide across it and pick up on edges, textures, and shapes — the same features regardless of where they appear in the image. That's why it learns faster and generalizes better, even with far fewer parameters.
+The ANN has to flatten each image into a flat list of numbers before it can look at it, which throws away all information about which pixels are next to which. The CNN looks at the image as an actual 2D grid, using small filters that slide across it and pick up on edges, textures, and shapes the same features regardless of where they appear in the image. That's why it learns faster and generalizes better, even with far fewer parameters.
 
-## What's in this repo
+## What is in this repo
 
-- `CIFAR10_ANN_vs_CNN_Comparative_Analysis.ipynb` — the full notebook: data exploration, both models, training curves, confusion matrices, per-class results, and a written conclusion.
-- `CIFAR10_ANN_vs_CNN_Comparative_Analysis.html` — a read-only version you can open in any browser, no Jupyter needed.
+- `CIFAR10_ANN_vs_CNN_Comparative_Analysis.ipynb` : the full notebook: data exploration, both models, training curves, confusion matrices, per class results, and a written conclusion.
 
 ## Running it yourself
 
